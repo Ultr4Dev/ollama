@@ -42,8 +42,8 @@ func TestDelete(t *testing.T) {
 	}
 
 	checkFileExists(t, filepath.Join(p, "manifests", "*", "*", "*", "*"), []string{
-		filepath.Join(p, "manifests", "registry.ollama.ai", "library", "test", "latest"),
-		filepath.Join(p, "manifests", "registry.ollama.ai", "library", "test2", "latest"),
+		filepath.Join(p, "manifests", "nexus.shitcloud.se/repository/ollama-COMBINED", "library", "test", "latest"),
+		filepath.Join(p, "manifests", "nexus.shitcloud.se/repository/ollama-COMBINED", "library", "test2", "latest"),
 	})
 
 	checkFileExists(t, filepath.Join(p, "blobs", "*"), []string{
@@ -60,7 +60,7 @@ func TestDelete(t *testing.T) {
 	}
 
 	checkFileExists(t, filepath.Join(p, "manifests", "*", "*", "*", "*"), []string{
-		filepath.Join(p, "manifests", "registry.ollama.ai", "library", "test2", "latest"),
+		filepath.Join(p, "manifests", "nexus.shitcloud.se/repository/ollama-COMBINED", "library", "test2", "latest"),
 	})
 
 	checkFileExists(t, filepath.Join(p, "blobs", "*"), []string{
