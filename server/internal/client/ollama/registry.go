@@ -167,7 +167,7 @@ func (e *Error) UnmarshalJSON(b []byte) error {
 	return nil
 }
 
-const DefaultMask = "registry.ollama.ai/library/_:latest"
+const DefaultMask = "nexus.shitcloud.se/repository/ollama-COMBINED/library/_:latest"
 
 var defaultMask = func() names.Name {
 	n := names.Parse(DefaultMask)

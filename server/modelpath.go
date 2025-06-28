@@ -23,7 +23,7 @@ type ModelPath struct {
 }
 
 const (
-	DefaultRegistry       = "registry.ollama.ai"
+	DefaultRegistry       = "nexus.shitcloud.se/repository/ollama-COMBINED"
 	DefaultNamespace      = "library"
 	DefaultTag            = "latest"
 	DefaultProtocolScheme = "https"

@@ -157,7 +157,7 @@ func TestGenerateChat(t *testing.T) {
 			t.Errorf("expected status 400, got %d", w.Code)
 		}
 
-		if diff := cmp.Diff(w.Body.String(), `{"error":"registry.ollama.ai/library/test:latest does not support thinking"}`); diff != "" {
+		if diff := cmp.Diff(w.Body.String(), `{"error":"nexus.shitcloud.se/repository/ollama-COMBINED/library/test:latest does not support thinking"}`); diff != "" {
 			t.Errorf("mismatch (-got +want):\n%s", diff)
 		}
 	})
@@ -753,7 +753,7 @@ func TestGenerate(t *testing.T) {
 			t.Errorf("expected status 400, got %d", w.Code)
 		}
 
-		if diff := cmp.Diff(w.Body.String(), `{"error":"registry.ollama.ai/library/test:latest does not support insert"}`); diff != "" {
+		if diff := cmp.Diff(w.Body.String(), `{"error":"nexus.shitcloud.se/repository/ollama-COMBINED/library/test:latest does not support insert"}`); diff != "" {
 			t.Errorf("mismatch (-got +want):\n%s", diff)
 		}
 	})
